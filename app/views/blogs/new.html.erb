@@ -1,0 +1,17 @@
+<div class="contents row">
+  <%= form_for @blog do |form| %>
+    <h4>
+      投稿する
+    </h4>
+
+    <div class="field">
+    <%= form.label :text %>
+    <%= form.text_area :text, placeholder: "本文", name: "text" %>
+    </div>
+
+    <div class="actions">
+    <%= form.submit "送信" %>
+    </div>
+
+  <% end %>
+</div>
